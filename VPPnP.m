@@ -1,7 +1,7 @@
 function [R,T] = VPPnP(Pts,impts,initf)
 
 if nargin<3
-    initf=@initializer;
+    initf=@DLT;
 end
 [R0,t0]=initf(Pts,impts);
 npt=size(impts,2);
